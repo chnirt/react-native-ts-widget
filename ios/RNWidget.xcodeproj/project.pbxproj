@@ -12,6 +12,14 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		6172F2D35A4C3AA820D92908 /* libPods-RNWidget.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6423831EA8574132BED9D8CC /* libPods-RNWidget.a */; };
+		6FC70FFD27DE261700F7352B /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FC70FFC27DE261700F7352B /* WidgetKit.framework */; };
+		6FC70FFF27DE261700F7352B /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FC70FFE27DE261700F7352B /* SwiftUI.framework */; };
+		6FC7100227DE261700F7352B /* MyRNWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC7100127DE261700F7352B /* MyRNWidget.swift */; };
+		6FC7100527DE261A00F7352B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FC7100427DE261A00F7352B /* Assets.xcassets */; };
+		6FC7100727DE261A00F7352B /* MyRNWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 6FC7100327DE261700F7352B /* MyRNWidget.intentdefinition */; };
+		6FC7100827DE261A00F7352B /* MyRNWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 6FC7100327DE261700F7352B /* MyRNWidget.intentdefinition */; };
+		6FC7100B27DE261A00F7352B /* MyRNWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6FC70FFB27DE261700F7352B /* MyRNWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6FC7101727DE274D00F7352B /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC7101627DE274D00F7352B /* File.swift */; };
 		7EF68E3733C33B6898317E18 /* libPods-RNWidget-RNWidgetTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABFE59519B596E51CEFDCCC0 /* libPods-RNWidget-RNWidgetTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -24,7 +32,28 @@
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
 			remoteInfo = RNWidget;
 		};
+		6FC7100927DE261A00F7352B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6FC70FFA27DE261700F7352B;
+			remoteInfo = MyRNWidgetExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6FC7100C27DE261A00F7352B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6FC7100B27DE261A00F7352B /* MyRNWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		00E356EE1AD99517003FC87E /* RNWidgetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RNWidgetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,6 +68,17 @@
 		1D0AE47A65C8663E3B452821 /* Pods-RNWidget-RNWidgetTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNWidget-RNWidgetTests.release.xcconfig"; path = "Target Support Files/Pods-RNWidget-RNWidgetTests/Pods-RNWidget-RNWidgetTests.release.xcconfig"; sourceTree = "<group>"; };
 		6423831EA8574132BED9D8CC /* libPods-RNWidget.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNWidget.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C97AB639B58BBB4B15BBE30 /* Pods-RNWidget-RNWidgetTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNWidget-RNWidgetTests.debug.xcconfig"; path = "Target Support Files/Pods-RNWidget-RNWidgetTests/Pods-RNWidget-RNWidgetTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6FC70FFB27DE261700F7352B /* MyRNWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MyRNWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FC70FFC27DE261700F7352B /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		6FC70FFE27DE261700F7352B /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		6FC7100127DE261700F7352B /* MyRNWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRNWidget.swift; sourceTree = "<group>"; };
+		6FC7100327DE261700F7352B /* MyRNWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = MyRNWidget.intentdefinition; sourceTree = "<group>"; };
+		6FC7100427DE261A00F7352B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6FC7100627DE261A00F7352B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6FC7101027DE269B00F7352B /* RNWidget-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RNWidget-Bridging-Header.h"; sourceTree = "<group>"; };
+		6FC7101327DE270100F7352B /* RNWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = RNWidget.entitlements; path = RNWidget/RNWidget.entitlements; sourceTree = "<group>"; };
+		6FC7101627DE274D00F7352B /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		6FC7101827DE278B00F7352B /* MyRNWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyRNWidgetExtension.entitlements; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = RNWidget/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ABFE59519B596E51CEFDCCC0 /* libPods-RNWidget-RNWidgetTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNWidget-RNWidgetTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0A881CF5CF3F2B244570E2A /* Pods-RNWidget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNWidget.debug.xcconfig"; path = "Target Support Files/Pods-RNWidget/Pods-RNWidget.debug.xcconfig"; sourceTree = "<group>"; };
@@ -60,6 +100,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				6172F2D35A4C3AA820D92908 /* libPods-RNWidget.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FC70FF827DE261700F7352B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FC70FFF27DE261700F7352B /* SwiftUI.framework in Frameworks */,
+				6FC70FFD27DE261700F7352B /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,12 +135,14 @@
 		13B07FAE1A68108700A75B9A /* RNWidget */ = {
 			isa = PBXGroup;
 			children = (
+				6FC7101327DE270100F7352B /* RNWidget.entitlements */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				6FC7101627DE274D00F7352B /* File.swift */,
 			);
 			name = RNWidget;
 			sourceTree = "<group>";
@@ -102,8 +153,22 @@
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				6423831EA8574132BED9D8CC /* libPods-RNWidget.a */,
 				ABFE59519B596E51CEFDCCC0 /* libPods-RNWidget-RNWidgetTests.a */,
+				6FC70FFC27DE261700F7352B /* WidgetKit.framework */,
+				6FC70FFE27DE261700F7352B /* SwiftUI.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6FC7100027DE261700F7352B /* MyRNWidget */ = {
+			isa = PBXGroup;
+			children = (
+				6FC7100127DE261700F7352B /* MyRNWidget.swift */,
+				6FC7100327DE261700F7352B /* MyRNWidget.intentdefinition */,
+				6FC7100427DE261A00F7352B /* Assets.xcassets */,
+				6FC7100627DE261A00F7352B /* Info.plist */,
+				6FC7101027DE269B00F7352B /* RNWidget-Bridging-Header.h */,
+			);
+			path = MyRNWidget;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -116,9 +181,11 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				6FC7101827DE278B00F7352B /* MyRNWidgetExtension.entitlements */,
 				13B07FAE1A68108700A75B9A /* RNWidget */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* RNWidgetTests */,
+				6FC7100027DE261700F7352B /* MyRNWidget */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				E233CBF5F47BEE60B243DCF8 /* Pods */,
@@ -133,6 +200,7 @@
 			children = (
 				13B07F961A680F5B00A75B9A /* RNWidget.app */,
 				00E356EE1AD99517003FC87E /* RNWidgetTests.xctest */,
+				6FC70FFB27DE261700F7352B /* MyRNWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -145,7 +213,6 @@
 				6C97AB639B58BBB4B15BBE30 /* Pods-RNWidget-RNWidgetTests.debug.xcconfig */,
 				1D0AE47A65C8663E3B452821 /* Pods-RNWidget-RNWidgetTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -185,15 +252,34 @@
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				C8AC78B0264D0F9F6F6D630E /* [CP] Embed Pods Frameworks */,
 				ADC9DDC32298B72B3CF5DC8E /* [CP] Copy Pods Resources */,
+				6FC7100C27DE261A00F7352B /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				6FC7100A27DE261A00F7352B /* PBXTargetDependency */,
 			);
 			name = RNWidget;
 			productName = RNWidget;
 			productReference = 13B07F961A680F5B00A75B9A /* RNWidget.app */;
 			productType = "com.apple.product-type.application";
+		};
+		6FC70FFA27DE261700F7352B /* MyRNWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6FC7100F27DE261A00F7352B /* Build configuration list for PBXNativeTarget "MyRNWidgetExtension" */;
+			buildPhases = (
+				6FC70FF727DE261700F7352B /* Sources */,
+				6FC70FF827DE261700F7352B /* Frameworks */,
+				6FC70FF927DE261700F7352B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyRNWidgetExtension;
+			productName = MyRNWidgetExtension;
+			productReference = 6FC70FFB27DE261700F7352B /* MyRNWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -201,6 +287,7 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1210;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
@@ -208,7 +295,10 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1250;
+					};
+					6FC70FFA27DE261700F7352B = {
+						CreatedOnToolsVersion = 12.5;
 					};
 				};
 			};
@@ -227,6 +317,7 @@
 			targets = (
 				13B07F861A680F5B00A75B9A /* RNWidget */,
 				00E356ED1AD99517003FC87E /* RNWidgetTests */,
+				6FC70FFA27DE261700F7352B /* MyRNWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -245,6 +336,14 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FC70FF927DE261700F7352B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FC7100527DE261A00F7352B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,8 +510,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FC7101727DE274D00F7352B /* File.swift in Sources */,
+				6FC7100827DE261A00F7352B /* MyRNWidget.intentdefinition in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FC70FF727DE261700F7352B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FC7100727DE261A00F7352B /* MyRNWidget.intentdefinition in Sources */,
+				6FC7100227DE261700F7352B /* MyRNWidget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +534,11 @@
 			target = 13B07F861A680F5B00A75B9A /* RNWidget */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
+		6FC7100A27DE261A00F7352B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6FC70FFA27DE261700F7352B /* MyRNWidgetExtension */;
+			targetProxy = 6FC7100927DE261A00F7352B /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
@@ -431,6 +546,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6C97AB639B58BBB4B15BBE30 /* Pods-RNWidget-RNWidgetTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -458,6 +574,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1D0AE47A65C8663E3B452821 /* Pods-RNWidget-RNWidgetTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = RNWidgetTests/Info.plist;
@@ -482,9 +599,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C0A881CF5CF3F2B244570E2A /* Pods-RNWidget.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = RNWidget/RNWidget.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9MGWQ23V96;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = RNWidget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -498,6 +618,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = RNWidget;
+				SWIFT_OBJC_BRIDGING_HEADER = "MyRNWidget/RNWidget-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -508,9 +629,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D00AAFFCFCFDA5787532823F /* Pods-RNWidget.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = RNWidget/RNWidget.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9MGWQ23V96;
 				INFOPLIST_FILE = RNWidget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -523,8 +647,79 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = RNWidget;
+				SWIFT_OBJC_BRIDGING_HEADER = "MyRNWidget/RNWidget-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		6FC7100D27DE261A00F7352B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = MyRNWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 9MGWQ23V96;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = MyRNWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.RNWidget.MyRNWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6FC7100E27DE261A00F7352B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = MyRNWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 9MGWQ23V96;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = MyRNWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.RNWidget.MyRNWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -668,6 +863,15 @@
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
 				13B07F951A680F5B00A75B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6FC7100F27DE261A00F7352B /* Build configuration list for PBXNativeTarget "MyRNWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FC7100D27DE261A00F7352B /* Debug */,
+				6FC7100E27DE261A00F7352B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

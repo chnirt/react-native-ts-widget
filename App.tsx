@@ -9,10 +9,16 @@
  */
 
 import React, {useState} from 'react';
-import {StyleSheet, View, TextInput, NativeModules} from 'react-native';
+import {
+  StyleSheet,
+  View,
+  TextInput,
+  NativeModules,
+  Platform,
+} from 'react-native';
 import SharedGroupPreferences from 'react-native-shared-group-preferences';
 
-const group = 'group.asap';
+const group = 'group.org.chnirt.RNWidget';
 
 const SharedStorage = NativeModules.SharedStorage;
 
@@ -23,14 +29,18 @@ const App = () => {
   };
 
   const handleSubmit = async () => {
-    try {
-      // iOS
-      await SharedGroupPreferences.setItem('widgetKey', widgetData, group);
-    } catch (error) {
-      console.log({error});
+    console.log('ok');
+    if (Platform.OS === 'ios') {
+      try {
+        // iOS
+        await SharedGroupPreferences.setItem('widgetKey', widgetData, group);
+      } catch (error) {
+        console.log({error});
+      }
+    } else {
+      // Android
+      SharedStorage.set(JSON.stringify({text}));
     }
-    // Android
-    SharedStorage.set(JSON.stringify({text}));
   };
 
   return (
