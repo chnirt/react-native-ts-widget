@@ -30,10 +30,12 @@ const App = () => {
 
   const handleSubmit = async () => {
     console.log('ok');
+
     if (Platform.OS === 'ios') {
       try {
         // iOS
         await SharedGroupPreferences.setItem('widgetKey', widgetData, group);
+        SharedStorage.refreshWidget();
       } catch (error) {
         console.log({error});
       }
